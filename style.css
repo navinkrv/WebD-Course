@@ -16,6 +16,9 @@ header{
     color:#f8f8f8;
     
 }
+.menu-btn{
+    display: none;
+}
 
 ul{
     list-style: none;
@@ -83,3 +86,45 @@ footer>p{
     padding: 20px;
     text-align: center;
 }
+
+
+
+@media screen and (max-width:800px){
+
+    ul{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+        padding: 10px;
+    }
+    .heading-title{
+        font-size: 50px;
+    }
+
+
+    .services{
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+    }
+    .service{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:500px){
+
+    .top{
+        flex-direction: column;
+    }
+    .image-container{
+        width: 100%;
+    }
+    .image-heading{
+        width: 100%;
+    }
+}
+
