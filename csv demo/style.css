@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nodeContainer{
+    position: relative;
+}
+.node{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    border:2px solid grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+.node button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Hconnector{
+    width: 30px;
+    height: 0px;
+    border: 2px solid grey;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+.Vconnector{
+    height: 130%;
+    width: 0px;
+    border: 2px solid grey;
+    position: absolute;
+    left: -28px;
+    top: -12px;
+} 
+
+.sub-node{
+    position: absolute;
+    left: 100%;
+}
+.sub-node:nth-child(n){
+    
+}
+
+.nodeContainer:first-child>.Vconnector{
+    display: none;
+}
+
+.nodeContainer:last-child  .Vconnector{
+ height: 67%;
+}
